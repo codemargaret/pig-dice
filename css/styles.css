@@ -1,0 +1,176 @@
+
+/* ========================= GENERAL TAGS ======================== */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(239, 250, 249);
+}
+
+blockquote {
+  border-left: none;
+}
+
+h1, h2, h3, h4 {
+  text-transform: capitalize;
+}
+
+li {
+  font-style: italic;
+  line-height: 150%;
+}
+
+form{
+  /*align-items: center;*/
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+
+p{
+  margin: 30px;
+}
+
+/* --- div --- */
+
+.container {
+  background-color: rgb(239, 250, 249);
+  border-radius: 15px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  min-width: 95%;
+}
+
+.footer {
+  background-color: #d7f4fa;
+  opacity: .6;
+  padding: 1em;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 105px;
+}
+
+.jumbotron {
+  border-radius: 23px;
+    text-align: center;
+    /*box-shadow: 4px 4px 10px #aaa;*/
+}
+
+
+.question {
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  border-radius: 10px;
+  background-color: #d7f4fa;
+
+}
+
+/*--------------*/
+
+/* --- font --- */
+
+#top{
+  text-align: center;
+}
+.title {
+  text-align: center;
+  margin-bottom: 4.5%;
+  border-radius: 1000px;
+  padding-top: .3%;
+  padding-bottom: .3%;
+}
+
+.titlejumbotron {
+
+  margin-bottom: 2.5%;
+}
+
+.top{
+  text-align: center;
+}
+
+.italic {
+  font-style: oblique;
+
+}
+
+.titlequestion {
+  text-align: center;
+  padding-top: 10px;
+}
+/*--------------*/
+
+
+/* --- decoration --- */
+
+a:hover{
+  background-color: #d7f4fa;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+.ruby{
+  display: none;
+}
+
+.php{
+  display: none;
+}
+
+.csharp{
+  display: none;
+}
+
+.border{
+  background-color:#d7f4fa;
+    margin: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+/*--------------*/
+
+
+/* --- spacing --- */
+
+.float_center {
+  float: right;
+  position: relative;
+  left: -50%;
+  text-align: left;
+}
+
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}
+
+
+.headerspace {
+  margin-top: 1%;
+}
+
+.footerspace {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.textbreak {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.webnamespace {
+  margin-left: 5%;
+  padding-left: 4px;
+  padding-bottom: 5%;
+}
+
+button{
+  margin: 10px;
+}
+/*--------------*/

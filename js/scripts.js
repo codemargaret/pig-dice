@@ -1,8 +1,7 @@
-
-
-$(document).ready(function(){
+//player 1
+$(document).ready(function() {
   function diceRoll() {
-      return Math.floor(Math.random()*(6-1+1)+1);
+    return Math.floor(Math.random() * (6) + 1);
   }
   var turnScore = 0;
   var total = 0;
@@ -10,23 +9,15 @@ $(document).ready(function(){
   var current = "";
 
   var turn = function(score) {
-    if (score === 1)  {
-      alert("Your turn is over, try again.")
+    if (score === 1) {
+      alert("Your turn is over, other player's turn.")
       turnScore = 0;
-    } else if (score === 2) {
-        return turnScore += 2
-    } else if (score === 3) {
-      return turnScore += 3
-    } else if (score === 4) {
-      return turnScore += 4
-    } else if (score === 5) {
-      return turnScore += 5
-    } else if (score === 6) {
-      return turnScore += 6
+    } else {
+      return turnScore += score
     }
   };
 
-  var addToTotal = function (turnScore) {
+  var addToTotal = function(turnScore) {
     test = turnScore + test
     return test;
   }
@@ -37,10 +28,9 @@ $(document).ready(function(){
     turn(current);
     $('#currScore').text(current);
     $('#turnScore').text(turnScore);
-
   });
 
-  $(".hold").click(function(){
+  $(".hold").click(function() {
     addToTotal(turnScore);
     $('#total').text(test);
 
@@ -50,16 +40,17 @@ $(document).ready(function(){
     if (test >= 100) {
       alert("Player 1 wins!");
     }
-
+    alert("End Player 1's turn")
   });
-
-
 });
 
+//player 2
+$(document).ready(function() {
 
-$(document).ready(function(){
+  // Back End Logic
+
   function diceRoll() {
-      return Math.floor(Math.random()*(6-1+1)+1);
+    return Math.floor(Math.random() * (6) + 1);
   }
   var turnScore = 0;
   var total = 0;
@@ -67,45 +58,40 @@ $(document).ready(function(){
   var current = "";
 
   var turn = function(score) {
-    if (score === 1)  {
-      alert("Your turn is over, try again.")
+    if (score === 1) {
+      alert("Your turn is over, other player's turn.")
       turnScore = 0;
-    } else if (score === 2) {
-        return turnScore += 2
-    } else if (score === 3) {
-      return turnScore += 3
-    } else if (score === 4) {
-      return turnScore += 4
-    } else if (score === 5) {
-      return turnScore += 5
-    } else if (score === 6) {
-      return turnScore += 6
+    } else {
+      return turnScore += score
     }
   };
 
-  var addToTotal = function (turnScore) {
+  var addToTotal = function(turnScore) {
     test = turnScore + test
     return test;
   }
 
-$('.roll2').click(function(event) {
-  event.preventDefault();
-  current = diceRoll();
-  turn(current);
-  $('#currScore2').text(current);
-  $('#turnScore2').text(turnScore);
+  //Front End Logic
 
-});
+  $('.roll2').click(function(event) {
+    event.preventDefault();
+    current = diceRoll();
+    turn(current);
+    $('#currScore2').text(current);
+    $('#turnScore2').text(turnScore);
 
-$(".hold2").click(function(){
-  addToTotal(turnScore);
-  $('#total2').text(test);
+  });
 
-  $("#currScore2").empty();
-  $("#turnScore2").empty();
-  turnScore = 0;
-  if (test >= 100) {
-    alert("Player 2 wins!");
-  }
-});
+  $(".hold2").click(function() {
+    addToTotal(turnScore);
+    $('#total2').text(test);
+
+    $("#currScore2").empty();
+    $("#turnScore2").empty();
+    turnScore = 0;
+    if (test >= 100) {
+      alert("Player 2 wins!");
+    }
+    alert("End Player 2's turn")
+  });
 });
