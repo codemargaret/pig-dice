@@ -56,11 +56,15 @@
           </div>
         </div>
       </div>
-      <form id="diceNumber">
+      <form class="displayform" id="diceNumber">
         <label for="playerNumber">How many dice do you want to roll?</label>
-        <input id="playerNumber" type="number"></input>
+        <input id="playerNumber" type="number" placeholder="0"></input>
         <button type="submit" class="btn">Submit</button>
       </form>
+      <div class="showDiceNumber">
+        <p>You are rolling <span id="showDiceNumber"></span> dice.</p>
+        <button id="changeDice">Change Dice Number</button>
+      </div>
     </div>
   </body>
 </html>
