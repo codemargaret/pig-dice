@@ -1,12 +1,25 @@
-# _{Application Name}_
+# _Pig Dice_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A gaming site to play pig dice, 8.23.2017_
 
-#### By _**Margaret Berry**_
+#### By _**Margaret Berry and John Parsons**_
 
 ## Description
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+
+## Specifications
+* _Game will generate a random number between 1 and 6_
+* _Example input: User presses play_
+* _Example output: 4_
+
+* _If the number is 1, the turn is ended and the total for the turn is zero_
+* _Example input: User presses play_
+* _Example output: 1 - Your turn is over._
+
+* _If the number is 2-6, give the player the option to hold or roll again._
+* _Example input:User presses play_
+* _Example output: Hold or end turn?_
 
 ## Setup/Installation Requirements
 
