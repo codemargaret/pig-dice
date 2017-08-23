@@ -17,7 +17,11 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _Example input: User presses play_
 * _Example output: 1 - Your turn is over._
 
-* _If the number is 2-6, give the player the option to hold or roll again._
+* _If the number is 2-6, give the turn score and the player has the option to hold or roll again._
+* _Example input:User presses play_
+* _Example output: Hold or end turn?_
+
+* _If the player decides to hold, the turn score is added to the total._
 * _Example input:User presses play_
 * _Example output: Hold or end turn?_
 
