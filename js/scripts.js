@@ -3,6 +3,7 @@ function diceRoll() {
 }
 var turnScore = 0;
 var total = 0;
+var test = 0;
 var current = "";
 
 var turn = function(score) {
@@ -22,20 +23,25 @@ var turn = function(score) {
   }
 };
 
+var addToTotal = function (turnScore) {
+  test = turnScore + test
+  return test;
+}
+
 $(document).ready(function(){
   $('.roll').click(function(event) {
     event.preventDefault();
     current = diceRoll();
     turn(current);
-    $('.currScore').text(current);
-    $('.turnScore').text(turnScore);
+    $('#currScore').text(current);
+    $('#turnScore').text(turnScore);
   });
 
   $(".hold").click(function(){
+    addToTotal(turnScore);
+    $('#total').text(test);
 
-    $('.total').text(turnScore);
-
-    $(".currScore").empty();
-    $(".turnScore").empty();
+    $("#currScore").empty();
+    $("#turnScore").empty();
 });
 });
