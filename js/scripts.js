@@ -1,8 +1,14 @@
 //player 1
 $(document).ready(function() {
-  function diceRoll() {
-    return Math.floor(Math.random() * (6) + 1);
+  $('#diceNumber').submit(function(event){
+    event.preventDefault();
+    var diceNumber = $('input#playerNumber').val();
+    console.log(diceNumber);
+  });
+  function diceRoll(min, max) {
+    return Math.floor(Math.random() * (max-min+1) + min);
   }
+
   var turnScore = 0;
   var total = 0;
   var test = 0;
