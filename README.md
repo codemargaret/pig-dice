@@ -5,46 +5,35 @@
 #### By _**Margaret Berry and John Parsons**_
 
 ## Description
-
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Each turn, a player repeatedly rolls a die. After each roll, the player decides whether to "hold" or roll again. If a 1 is rolled, the player scores nothing for that turn, and it becomes the next player's turn. The first player to get 100 points wins. The app displays the current roll and total score for each player._
 
 ## Specifications
-* _Game will generate a random number between 1 and 6_
-* _Example input: User presses play_
-* _Example output: 4_
-
-* _If the number is 1, the turn is ended and the total for the turn is zero_
-* _Example input: User presses play_
-* _Example output: 1 - Your turn is over._
-
-* _If the number is 2-6, give the turn score and the player has the option to hold or roll again._
-* _Example input:User presses play_
-* _Example output: Hold or end turn?_
-
-* _If the player decides to hold, the turn score is added to the total._
-* _Example input:User presses play_
-* _Example output: Hold or end turn?_
+| Spec              | Input | Output |
+|-------------------|-------|--------|
+| Game will generate a random number between 1 and 6    | User presses play     | 4      |
+| If the number is 1, the turn is ended and the total for the turn is zero   | User presses play     | 1 - Your turn is over.      |
+| If the player decides to hold, the turn score is added to the total.    | User presses play     | Total score: 16      |
 
 ## Setup/Installation Requirements
+_Run the following commands in Terminal:_
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+1. `$ git clone` [this repository](https://github.com/codemargaret/pig-dice.git)
+2. `$ cd pig-dice`
+3. `$ open index.html`
 
 ## Known Bugs
-
 _There are no known bugs at this time._
 
-## Support and contact details
+## Project Goals
+_Practice writing JavaScript functions._
 
-_If you have questions, comments, or concerns, please contact [Margaret](margaretshelaghmcgovern@gmail.com).  Feel free to make a contribution to the code._
+## Future Features
+_Add some styling to the user interface._
+
+## Support and contact details
+_If you have questions, comments, or concerns, please contact [Margaret](codeberry1@gmail.com).  Feel free to make a contribution to the code._
 
 ## Technologies Used
-
 * _HTML_
 * _CSS_
 * _Bootstrap_
@@ -52,7 +41,6 @@ _If you have questions, comments, or concerns, please contact [Margaret](margare
 * _jQuery_
 
 ### License
-
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2017 **_Margaret Berry_**
+Copyright (c) 2017 **_Margaret Berry and John Parsons_**
