@@ -5,14 +5,14 @@
 #### By _**Margaret Berry and John Parsons**_
 
 ## Description
-_Each turn, a player repeatedly rolls a die. After each roll, the player decides whether to "hold" or roll again. If a 1 is rolled, the player scores nothing for that turn, and it becomes the next player's turn. The first player to get 100 points wins. The app displays the current roll and total score for each player._
+_Each turn, a player repeatedly rolls a die. After each roll, the player decides whether to 'hold' or roll again. If a 1 is rolled, the player scores nothing for that turn, and it becomes the next player's turn. The first player to get 100 points wins. The app displays the current roll and total score for each player._
 
 ## Specifications
 | Spec              | Input | Output |
 |-------------------|-------|--------|
-| Game will generate a random number between 1 and 6    | User presses play     | 4      |
-| If the number is 1, the turn is ended and the total for the turn is zero   | User presses play     | 1 - Your turn is over.      |
-| If the player decides to hold, the turn score is added to the total.    | User presses play     | Total score: 16      |
+| Game will generate a random number between 1 and 6    | User presses 'roll'     | 4      |
+| If the number is 1, the turn is ended and the total for the turn is zero   | User presses 'roll'     | 1 - Your turn is over.      |
+| If the player decides to hold, the turn score is added to the total.    | User presses 'hold'     | Total score: 16      |
 
 ## Setup/Installation Requirements
 _Run the following commands in Terminal:_
